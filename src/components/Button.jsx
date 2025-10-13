@@ -1,4 +1,5 @@
 import React from 'react';
+import '../stylesheet/Button.css';
 
 function Button(props) {
 
@@ -7,7 +8,7 @@ function Button(props) {
 	};
 
   return(
-		<div className={`button-container ${isOperator(props.children) ? operator : null}`}>
+		<div className={`button-container ${isOperator(props.children) ? 'operator' : ''}`.trimEnd()}>
 			{props.children}
 		</div>
   );
