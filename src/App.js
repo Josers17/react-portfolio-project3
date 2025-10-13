@@ -1,10 +1,13 @@
 import './App.css';
 import Button from './components/Button.jsx';
+import Screen from './components/Screen.jsx';
+import ButtonClear from './components/ButtonClear.jsx';
 
 function App() {
   return (
     <div className="App">
       <div className='container-calculator'>
+        <Screen />
         <div className='row'>
           <Button>1</Button>
           <Button>2</Button>
@@ -29,7 +32,9 @@ function App() {
           <Button>.</Button>
           <Button>/</Button>
         </div>
-        <div className='row'></div>
+        <div className='row'>
+          <ButtonClear>Clear</ButtonClear>
+        </div>
       </div>
     </div>
   );
